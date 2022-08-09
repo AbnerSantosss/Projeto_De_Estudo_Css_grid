@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 62.5%;
+  
+  --ff-heading: 'Epilogue',
+    sans-serif;
+
+  --ff-texting: 'Open Sans',
+    sans-serif;
+  
+/*--Fonts--*/
+--Color-background-primary: #28293E;
+--Color-text-Primary: #ffff;
+--Color-paragraph-text: #BBB2E6;
+
+}
+
+body{
+  font-size: 1.6rem;
+  background-color: var(--Color-bg-primary);
+  color: var(--Color-text-Primary);
+}
+
+
+.header-content{
+  font-family: var(--ff-heading);
+}
+.header-content p {
+  color: var(--Color-paragraph-text);
+  text-transform: uppercase;
+}
+
+
+

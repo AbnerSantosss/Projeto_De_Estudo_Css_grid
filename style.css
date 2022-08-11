@@ -7,33 +7,315 @@
 :root {
   font-size: 62.5%;
   
-  --ff-heading: 'Epilogue',
+  --fs-heading: 5.6rem;
+  
+  /*--Fonts--*/
+  --ff-Epilogue: 'Epilogue',
     sans-serif;
 
-  --ff-texting: 'Open Sans',
+  --ff-Open-Sans: 'Open Sans',
     sans-serif;
-  
-/*--Fonts--*/
---Color-background-primary: #28293E;
---Color-text-Primary: #ffff;
---Color-paragraph-text: #BBB2E6;
+
+  --ff-Dancing: 'Dancing Script', cursive;
+
+
+  /*--COLORS--*/
+  --Color-background-primary: #e2cdcb;
+  --Color-text-Primary: #a38da1;
+  --Color-paragraph-text: #BBB2E6;
+  --color-background-span: #afa6a5;
+  --color-text-span: #ffffff;
 
 }
 
 body{
   font-size: 1.6rem;
-  background-color: var(--Color-bg-primary);
+  background-color: var(--Color-background-primary);
   color: var(--Color-text-Primary);
+  
+}
+
+/*=============PAGE================*/
+.page{
+  margin: 0 auto;
+  max-width: 33rem;
+ 
+}
+.page-card{
+ display: grid;
+  gap: 3.2rem;
 }
 
 
 .header-content{
-  font-family: var(--ff-heading);
+  font-family: var(--ff-Dancing);
+  text-align: center;
+  margin-top: 1.0rem;
+  padding-bottom: 14px;
+  animation: headerAnimation ease 2s;
 }
+
+/*=============HEADER================*/
+.header-content h1 {
+  font-weight: 800;
+  line-height: 4.8rem;
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+  letter-spacing: 7px;
+  
+}
+.header-content h3 {
+  font-size: 3.2rem;
+  margin-top: 2.9rem;
+  letter-spacing: 7px;
+  margin-bottom: 2.7rem;
+}
+
 .header-content p {
-  color: var(--Color-paragraph-text);
+  color: var(--Color-text-Primary);
   text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 1.7rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  font-family: var(--ff-texting);
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-align: center;
 }
+ 
+/*=============CARDS================*/
+.card img{
+  width: 100%;
+ height: 41.6rem;
+ object-fit: cover; /*Para usar toda proporção a imagem*/
+ border-radius: 6px;
+  transition-timing-function: ease-in;
+    transition: all 500ms;
+
+}
+.card img:hover{
+  opacity: 0.4;
+}
+
+.card {
+  position: relative;
+  font-family: var(--ff-texting);
+  transition-property: transform;
+  cursor: pointer;
+  transition-timing-function: ease-in;
+  transition: all 500ms;
+}
+
+.card:hover{
+  transform: scale(1.1);
+
+}
+
+.card h2{
+  position: absolute;
+  bottom: 5.2rem;
+  left: 2.8rem;
+  font-size: 4rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+.card h2 span {
+  border-radius: 2rem;
+  background-color: var(--color-background-span);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--color-text-span);
+  padding: 0 1.6rem;
+  height: 3.8rem;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  font-family: var(--ff-Dancing);
+  letter-spacing: 2px;
+}
+/*=============FOOTER================*/
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.0rem;
+  padding: 3.5rem 3.9rem;
+  flex-direction: column;
+
+}
+.footer-section P{
+  font-size: 1.6rem;
+}
+
+.footer-section a svg{
+ width: 3.4rem;
+ transition: 0.2s;
+ cursor: pointer;
+}
+.footer-section a svg path:hover{
+  fill: #2e2a2d;
+}
+.footer-section a svg path{
+  fill: #745a71;
+}
+
+
+/*=============RESPONSIBLE-PART================*/
+
+@media (min-width: 700px) {
+  :root {
+    --fs-heading: 5.6rem;
+  }
+
+  .page {
+    max-width: 117rem;
+    padding: 0 5rem;
+
+  }
+
+  .page-card {
+    max-width: 100.7rem;
+    grid-template-areas: "A A B""C D E";
+    margin: 0 auto;
+
+  }
+
+  .page-card div:nth-child(1) {
+    grid-area: A;
+    animation: card1 ease 2s;
+  }
+
+  .page-card div:nth-child(2) {
+    grid-area: B;
+    animation: card2 ease 2s;
+  }
+
+  .page-card div:nth-child(3) {
+    grid-area: C;
+    animation: card3 ease 2s;
+  }
+
+  .page-card div:nth-child(4) {
+    grid-area: D;
+    animation: card4 ease 2s;
+  }
+
+  .page-card div:nth-child(5) {
+    grid-area: E;
+    animation: card5 ease 2s;
+  }
+
+
+
+
+}
+
+/*=============Animação================*/
+
+@keyframes headerAnimation{
+0%{
+  opacity: 0;
+  transform:translateY(-15px) ;
+}
+100%{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+}
+
+/*--cards-animation--*/ 
+
+@keyframes card1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+@keyframes card2 {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+@keyframes card3 {
+  0% {
+    opacity: 0;
+    transform: translateZ(-35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+
+}
+@keyframes card4 {
+  0% {
+    opacity: 0;
+    transform: translateY(17px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+@keyframes card5 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+   
+   
+  
+
 
 
 

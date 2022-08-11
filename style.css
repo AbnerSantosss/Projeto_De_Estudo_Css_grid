@@ -69,6 +69,7 @@ body{
   font-size: 3.2rem;
   margin-top: 2.9rem;
   letter-spacing: 7px;
+  margin-bottom: 2.7rem;
 }
 
 .header-content p {
@@ -178,7 +179,7 @@ body{
   }
 
   .page-card {
-    max-width: 85.7rem;
+    max-width: 100.7rem;
     grid-template-areas: "A A B""C D E";
     margin: 0 auto;
 

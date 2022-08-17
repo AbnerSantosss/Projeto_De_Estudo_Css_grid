@@ -164,8 +164,8 @@ body{
   fill: #745a71;
 }
 
-
 /*=============RESPONSIBLE-PART================*/
+
 
 @media (min-width: 700px) {
   :root {
@@ -212,10 +212,10 @@ body{
     animation: card5 ease 2s;
   }
 
-
-
-
 }
+
+
+
 
 /*=============Animação================*/
 

@@ -180,10 +180,12 @@ body{
 
   .page-card {
     max-width: 100.7rem;
-    grid-template-areas: "A A B""C D E";
+    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-areas: "A A B""C D D" "E E E";
     margin: 0 auto;
-
   }
+
 
   .page-card div:nth-child(1) {
     grid-area: A;

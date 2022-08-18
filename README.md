@@ -12,7 +12,8 @@
 
  
 Preview ⬇️⬇️
-  <p style="text-align:center;">Veja o projeto online clicando <a href="https://colibribroderie.netlify.app/">Aqui!</a></p>
+ <center>  <p style="text-align:center;">Veja o projeto online clicando <a href="https://colibribroderie.netlify.app/">Aqui!</a></p></center>
+
 
 
 ![— inclua um crédto (5)](https://user-images.githubusercontent.com/107922389/185272365-391a2a5b-2ad6-400b-bd85-bc3c56c42e69.gif)

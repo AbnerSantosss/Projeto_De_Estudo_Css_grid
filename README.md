@@ -1,4 +1,4 @@
-## 📏 Fite feito com Display Grid 📐
+## 📏 Site feito com Display Grid 📐
 
 > Projeto pessoal feito com Display Grid, onde pude praticar a manipulação do Grid.
 
